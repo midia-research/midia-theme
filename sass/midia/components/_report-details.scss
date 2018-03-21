@@ -1,0 +1,18 @@
+/*
+ * Report detail pages.
+ */
+
+
+
+.report-details-date {
+    color: $clr-blue;
+}
+
+.report-thumbnail {
+    background-size: 100%;
+    width: 50%;
+    height: 0;
+    padding: 0 0 71% 0;
+    margin: 0 0 40px 25%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}

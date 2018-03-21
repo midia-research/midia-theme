@@ -1,0 +1,112 @@
+/*
+ * Blog.
+ */
+
+
+
+// Typography
+
+.blog-home-title {
+    margin-top: -8px;
+    margin-bottom: 50px;
+    font-family: $font-family-alt;
+    font-weight: bold;
+}
+
+.blog-post-date {
+    color: $clr-blue;
+}
+
+
+
+// Higlight boxes
+
+.blog-highlight {
+    margin-bottom: 30px;
+    @include make-xs-column(12);
+
+    .blog-highlight-inner {
+        background: #f8f8f8;
+        @include clearfix();
+    }
+
+    .blog-highlight-img {
+        display: block;
+        width: calc(33% - 15px);
+        height: 0;
+        margin: 15px 0 15px 15px;
+        padding: 0 0 33% 0;
+        background-position: center;
+        background-size: cover;
+        float: left;
+        background-color: $clr-grey;
+    }
+
+    .blog-highlight-content {
+        width: 66%;
+        float: left;
+        padding: 15px 2%;
+
+        h2 {
+            font-weight: bold;
+            font-size: 21px;
+            margin-top: 0px;
+            text-transform: uppercase;
+        }
+    }
+
+    .blog-highlight-date {
+        font-size: 12px;
+        color: $clr-blue;
+    }
+
+    &--hero {
+        .blog-highlight-img {
+            float: none;
+            margin: 0;
+            padding: 0 0 56.25%;
+            width: 100%;
+        }
+        .blog-highlight-content {
+            background: rgba(0,0,0,.65);
+            bottom: 0;
+            position: absolute;
+            width: calc(100% - 30px);
+        }
+    }
+
+    &.blog-highlight-small {
+        @include make-xs-column(6);
+
+        .blog-highlight-img {
+            margin-bottom: 0;
+            width: calc(100% - 30px);
+            padding: 0 0 calc(100% - 60px) 0;
+        }
+
+        .blog-highlight-content {
+            width: 96%;
+            padding: 15px 4%;
+        }
+    }
+}
+
+
+
+// Plain listing
+
+.blog-listing-item {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 135, 160, 0.25);
+
+    h2 {
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+
+    .blog-listing-item-date {
+        font-size: 12px;
+        color: $clr-blue;
+    }
+}

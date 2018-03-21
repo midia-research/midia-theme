@@ -1,0 +1,13 @@
+{
+    "browser": true,
+    "node": true,
+    "laxcomma": true,
+    "laxbreak": true,
+    "undef": true,
+    "strict": false,
+    "asi": true,
+    "globals": {
+        "define": true,
+        "require": true
+    }
+}

@@ -1,0 +1,76 @@
+/*
+ * Additional, global typography styling.
+ */
+
+
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    @include transition(all 0.1s ease);
+}
+
+
+
+// Full width titles
+
+.full-title {
+    padding: 0 0 10px 0;
+    background-color: $clr-blue;
+
+    h2 {
+        font-size: 24px;
+        color: $clr-white;
+        font-weight: bold;
+    }
+}
+
+.full-title-ruled {
+    background-color: $clr-dark-grey;
+
+    h2 {
+        color: $clr-very-dark-grey;
+        font-weight: normal;
+        padding: 10px 0 20px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+}
+
+
+
+// Smaller, subtler titles
+
+.muted-title {
+    margin: 0 0 35px 0;
+
+    h1 {
+        margin: 0;
+        font-weight: 200;
+        font-size: 16px;
+        color: #333;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 10px 0;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+// Block-button lists
+
+.list-unstyled-buttons {
+    li {
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

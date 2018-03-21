@@ -1,0 +1,90 @@
+/*
+ * Main page footer.
+ */
+
+
+
+.page-footer {
+    padding: 40px 0;
+    background: $clr-dark;
+
+    &,
+    a {
+        color: #ccc;
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+        padding: 15px 0 60px;
+        text-align: center;
+
+        .col-md-8, ul {
+            display: none;
+        }
+    }
+}
+
+.page-footer a {
+    text-decoration: none;
+}
+
+.page-footer a:hover,
+.page-footer .links a:hover,
+.page-footer p.legals a:hover {
+    color: $clr-blue;
+    text-decoration: none;
+}
+
+.page-footer h4,
+.page-footer p {
+    margin: 0;
+}
+
+.page-footer h4 {
+    font-size: $font-size-base;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $clr-blue;
+    margin-bottom: 10px;
+}
+
+.page-footer p.legals,
+.page-footer p.legals a {
+    color: #999;
+}
+
+.page-footer p.legals {
+    clear: left;
+}
+
+.page-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-footer ul li {
+    float: left;
+    margin-right: 0.5em;
+}
+
+.page-footer .links {
+    @include clearfix();
+    text-transform: uppercase;
+    color: #999;
+}
+
+.page-footer .links a {
+    text-decoration: none;
+    font-size: $font-size-small;
+    color: #ccc;
+}
+
+.page-footer .links li:after {
+    content: "/";
+    margin-left: 0.65em;
+}
+
+.page-footer .links li:last-child::after {
+    content: "";
+    margin-left: 0;
+}

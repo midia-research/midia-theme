@@ -1,0 +1,111 @@
+/*
+ * Main body content styling.
+ */
+
+
+
+.main-content-top-wrap {
+    margin-top: $main-content-wrap-margin;
+}
+
+.main-content-top-wrap-with-filters {
+    margin-top: 240px;
+}
+
+.main-content {
+    padding-bottom: 40px;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+
+        em {
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+
+    h1, h2 {
+        color: $clr-blue;
+    }
+
+    h1 {
+        margin-top: -8px;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p, ul, ol {
+        font-size: $main-content-font-size;
+        margin-bottom: 38px;
+        line-height: $main-content-line-height;
+    }
+
+    p.intro {
+        color: $clr-blue;
+        font-weight: 200;
+        font-size: $main-content-font-size-large;
+        line-height: $main-content-line-height-large;
+        padding-bottom: 40px;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid rgba(0, 135, 160, 0.25);
+    }
+
+    // Image alignment and display, for WP and non-WP
+
+    img {
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+
+    img.alignnone {
+        width: auto;
+        height: auto;
+        margin: 0 0 30px;
+    }
+
+    img.aligncenter {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0 auto 30px;
+    }
+
+    img.alignleft {
+        float: left;
+        width: auto;
+        height: auto;
+        margin: 0 30px 30px 0;
+    }
+
+    img.alignright {
+        float: right;
+        width: auto;
+        height: auto;
+        margin: 0 0 30px 30px;
+    }
+
+    // Some images get wrapped in p tags in the RTE, so this rule is required
+    // to prevent an extra-large margin below. Ignore floated WP RTE images
+    // though, as they still need their margins
+
+    p img {
+        margin-bottom: 0;
+
+        &.alignleft, &.alignright {
+            margin-bottom: 30px;
+        }
+    }
+
+    .content-image-right {
+        float: right;
+        margin: 0 0 20px 20px;
+        width: 200px;
+    }
+
+    hr {
+        margin-bottom: 40px;
+    }
+}

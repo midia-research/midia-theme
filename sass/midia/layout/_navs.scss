@@ -1,0 +1,199 @@
+/*
+ * Navigation styling.
+ */
+
+
+
+// Navbar wrapper (main nav and utility)
+
+.navbar-wrapper {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+
+    // For Headroom slide in/out
+
+    @include animation-duration(0.5s);
+}
+
+
+
+// Top nav containers
+
+.utility-nav-wrapper, .navbar {
+    @media all and (min-width: $screen-sm-min) {
+        .container-fluid {
+            margin: 0 5%;
+            padding: 0;
+        }
+    }
+}
+
+
+
+// Utility nav
+
+.utility-nav-wrapper {
+    background: $clr-dark;
+    padding: 10px 0;
+}
+
+.utility-nav {
+    list-style: none;
+    float: right;
+    margin: 0 0 0 0;
+
+    li {
+        float: left;
+        text-transform: uppercase;
+        font-size: 11px;
+
+        a {
+            color: $clr-white;
+            margin: 0 0 0 2em;
+
+            &.follow-link {
+                margin: 0 0 0 1em;
+            }
+        }
+
+        a:hover {
+            opacity: 0.75;
+            text-decoration: none;
+        }
+
+        a.facebook, a.linkedin {
+            margin: 0 0 0 1em;
+        }
+
+        a.logged-in {
+            right: -5px;
+            position: relative;
+
+            &:after {
+                content: "/";
+                position: absolute;
+                right: -10px;
+                top: 0;
+            }
+        }
+
+        @media all and (max-width: $screen-sm-max) {
+            font-size: 9px;
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            a.logged-in:after {
+                content: "";
+                position: absolute;
+                right: 0px;
+            }
+        }
+    }
+}
+
+
+
+// Base
+
+.navbar {
+    border: none;
+}
+
+
+
+// Navigation items
+
+.navbar-nav {
+    float: right;
+    padding: 35px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    li {
+        font-size: $font-size-base;
+    }
+
+    > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: $screen-md-min) {
+        > li > a {
+            padding-left: 4em;
+            padding-right: 0;
+        }
+    }
+    
+    @media (max-width: 1380px) {
+        > li > a {
+            padding-left: 1em;
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        padding: 15px 0;
+        float: left;
+
+        > li {
+            font-size: $font-size-large;
+        }
+
+        > li > a {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+.navbar-collapse {
+    @media all and (max-width: $screen-sm-max) {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+
+
+// Brand image
+
+.navbar-brand {
+    position: relative;
+    height: auto;
+    @include transition(all 0.4s ease);
+
+    > img {
+        width: 138px;
+        height: 60px;
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+        padding: 4px 10px 3px;
+
+        > img {
+            width: 81px;
+            height: 35px;
+        }
+    }
+}
+
+
+
+// Toggle buttons
+
+.navbar-default {
+    .navbar-toggle {
+        background-color: $navbar-default-toggle-border-color;
+    }
+}
+
+.navbar-inverse {
+    .navbar-toggle {
+        background-color: $navbar-inverse-toggle-border-color;
+    }
+}

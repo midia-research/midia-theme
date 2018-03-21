@@ -1,0 +1,41 @@
+/*
+ * Small Bootstrap overrides and extensions.
+ */
+
+
+
+// Additional button styling
+
+.btn {
+    @include transition(all 0.1s ease);
+    &--text-left {
+        text-align: left;
+    }
+}
+
+.btn-primary:hover {
+    background: $btn-primary-bg-hover;
+}
+
+
+
+// Additional form styling
+
+.form-control-feedback-text {
+    right: 12px;
+    width: auto;
+    color: $state-info-text;
+}
+
+.control-label.required:after {
+    content: " *";
+    color: $state-danger-text;
+}
+
+
+
+// Additional tooltip styling
+
+.tooltip-wrap {
+    display: inline-block;
+}

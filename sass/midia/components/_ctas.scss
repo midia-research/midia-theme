@@ -1,0 +1,49 @@
+/*
+ * Calls to action.
+ */
+
+
+
+.cta {
+    background: $clr-blue;
+    padding: 40px 0 70px 0;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 900;
+        color: $clr-white;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 200;
+        margin-bottom: 20px;
+        color: $clr-white;
+    }
+
+    .btn-lg {
+        color: $clr-white;
+        background: rgba(255, 255, 255, 0.25);
+        border: none;
+        border-color: $clr-white;
+        margin: 0 5px;
+    }
+
+    .btn-lg:hover {
+        background-color: $clr-white;
+        border-color: $clr-white;
+        color: $clr-blue;
+    }
+
+    .btn-lg span {
+        margin-right: 0.3em;
+    }
+
+    @media all and (max-width: $screen-sm-max) {
+        padding: 10px 0 20px 0;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

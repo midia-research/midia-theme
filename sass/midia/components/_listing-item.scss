@@ -1,0 +1,75 @@
+/*
+ * General listing items.
+ */
+
+
+
+// Re-usable placeholder
+
+%listing-item {
+    @include clearfix();
+
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 135, 160, 0.25);
+}
+
+%listing-item-title {
+    font-size: 30px;
+    color: $clr-blue;
+    text-transform: uppercase;
+    margin-top: 0;
+
+    em {
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+%listing-item-thumb {
+    width: 25%;
+    height: 0;
+    padding: 0 0 36% 0;
+    float: right;
+    margin: 0 0 20px 20px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+
+
+// Basic style
+
+.listing-item {
+    @extend %listing-item;
+
+    .listing-item-title {
+        @extend %listing-item-title;
+    }
+
+    .listing-item-thumb {
+        @extend %listing-item-thumb;
+    }
+}
+
+
+
+// Report listing styles
+
+.report-listing-item {
+    @extend %listing-item;
+
+    .report-listing-item-title {
+        @extend %listing-item-title;
+    }
+
+    .report-listing-item-date {
+        font-size: 12px;
+        color: $clr-blue;
+    }
+
+    .report-listing-item-thumb {
+        @extend %listing-item-thumb;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+}

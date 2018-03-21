@@ -1,0 +1,93 @@
+/*
+ * Subscriptions listing.
+ */
+
+
+
+.subscriptions-tabs {
+    margin-top: 20px;
+
+    .tab-content {
+        background: $clr-light-grey;
+        padding: 40px 0;
+        float: left;
+    }
+
+    .tab-content h2 {
+        font-size: 36px;
+    }
+
+    .nav-tabs.nav-justified {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    .nav-tabs.nav-justified li a {
+        background: $clr-dark;
+        border: none;
+        border-radius: 0;
+    }
+
+    .nav-tabs.nav-justified li a:hover {
+        background: $clr-dark-blue;
+        color: $clr-white;
+        border: none;
+    }
+
+    .nav-tabs.nav-justified li.active a,
+    .nav-tabs.nav-justified li.active a:hover {
+        background: $clr-blue;
+        border: none;
+        color: $clr-white;
+    }
+}
+
+.subscriptions-tabs .subscription-panel {
+    p, ul {
+        font-size: 13px;
+        margin: 0 0 20px 0;
+    }
+
+    .btn {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-top: 25px;
+    }
+
+    .btn strong {
+        font-size: 24px;
+    }
+
+    .btn small {
+        font-size: 11px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 2.5em;
+        font-weight: bold;
+    }
+
+    span {
+        color: #5cb85c;
+        padding-right: 1em;
+    }
+
+    .panel {
+        border-color: #dddddd;
+    }
+
+    .panel .panel-heading {
+        color: $clr-white;
+    }
+
+    .panel .panel-heading h3 {
+        font-size: 21px;
+    }
+
+    .panel .panel-heading h3 em {
+        font-weight: normal;
+        font-style: normal;
+    }
+}

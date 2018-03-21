@@ -1,0 +1,36 @@
+/*
+ * Marketing widget.
+ */
+
+
+
+.marketing {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.marketing-item {
+    text-align: center;
+    border-right: 1px solid $clr-grey;
+
+    &:last-child {
+        border: none;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    p {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .md-icon {
+        width: 175px;
+        height: 175px;
+        margin: 20px 0 30px;
+        background-size: cover;
+    }
+}

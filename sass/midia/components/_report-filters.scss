@@ -1,0 +1,54 @@
+/*
+ * Report search filters.
+ */
+
+
+
+.report-filters {
+    background: rgba(42, 55, 64, 0.85);
+    padding: 0;
+
+    ul {
+        @include clearfix;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            color: $clr-white;
+            text-transform: uppercase;
+            display: block;
+            float: left;
+            font-size: 10px;
+
+            a {
+                border: none;
+                border-radius: 0;
+                font-weight: bold;
+                padding: 10px 5px;
+                display: inline-block;
+            }
+
+            a:hover {
+                background: $clr-dark-blue;
+                color: $clr-white;
+            }
+
+            &.active a, &.active a:hover {
+                background: $clr-blue;
+                border: none;
+                color: $clr-white;
+            }
+        }
+    }
+
+    @media all and (min-width: $screen-sm-min) {
+        ul li {
+            font-size: 14px;
+
+            a {
+                padding: 15px;
+            }
+        }
+    }
+}

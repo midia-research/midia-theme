@@ -1,0 +1,31 @@
+/*
+ * Pagination.
+ */
+
+
+
+.pagination {
+    margin: 0px 0 60px 0;
+
+    @media all and (max-width: $screen-sm-max) {
+        li {
+            display: none;
+        }
+
+        li:first-child {
+            display: inline-block;
+        }
+
+        li:last-child {
+            display: inline-block;
+        }
+
+        li:first-child a:after {
+            content: "Prev";
+        }
+
+        li:last-child a:after {
+            content: "Next";
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/*
+ * Carousel.
+ */
+
+
+
+.hero-carousel {
+    height: 500px;
+    margin-bottom: 0;
+
+    .carousel-caption {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        margin: 200px 45% 80px 12%;
+        padding: 0px 25px 10px 25px;
+        background: rgba(0, 0, 0, 0.33);
+
+        @media (min-width: $screen-sm-min) {
+            p {
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+
+        @media all and (max-width: $screen-sm-max) {
+            z-index: 10;
+            right: 0;
+            left: 0;
+            text-align: left;
+            margin: 1%;
+            padding: 0 20px 15px 20px;
+            margin: 0 10% 60px 10%;
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .carousel-control {
+        &.left, &.right {
+            background: none;
+        }
+
+        @media all and (max-width: $screen-sm-max) {
+            width: 7%;
+        }
+    }
+
+    .item {
+        height: 500px;
+        background-color: #777;
+        background-size: cover;
+        background-position: center;
+
+        h1 {
+            font-weight: bold;
+            font-family: $font-family-alt;
+            color: $clr-white;
+        }
+
+        .carousel-caption p {
+            font-size: 16px;
+        }
+
+        @media all and (max-width: $screen-sm-max) {
+            .carousel-caption p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    ol.carousel-indicators.reverse li {
+        border-color: $clr-blue;
+
+        &.active {
+            background: $clr-blue;
+        }
+    }
+}

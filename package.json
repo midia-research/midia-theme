@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "midia-theme",
+  "description": "Midia frontend theme SASS. Built on top of Bootstrap.",
+  "version": "1.0.2",
+  "homepage": "https://github.com/3ev/midia-theme",
+  "author": "3ev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3ev/midia-theme"
+  },
+  "peerDependencies": {
+    "bootstrap-sass": "^3.3.4"
+  },
+  "main": "./js/main"
+}

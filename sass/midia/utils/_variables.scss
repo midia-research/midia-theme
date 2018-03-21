@@ -1,0 +1,102 @@
+/*
+ * Variables.
+ */
+
+
+
+// Re-usable theme colours
+
+$clr-white:          #ffffff;
+$clr-dark:           #2a3740;
+$clr-grey:           #eeeeee;
+$clr-dark-grey:      #e6e6e6;
+$clr-very-dark-grey: #666666;
+$clr-mid-grey:       #aaaaaa;
+$clr-light-grey:     #f1f1f1;
+$clr-dark-blue:      #0087a0;
+$clr-blue:           #00b5d7;
+$clr-dark-green:     #006666;
+$clr-consulting:     #ff5e48;
+$clr-research:       $clr-blue;
+$clr-proprietary:    #ffbe00;
+
+
+
+// Typography
+
+$font-family-sans-serif: 'open-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 18px;
+$font-size-h1: 40px;
+$font-size-h2: 21px;
+$font-size-h3: 21px;
+$headings-color: #5a5a5a;
+$headings-font-weight: bold;
+$text-color: #5a5a5a;
+$link-color: $clr-blue;
+$link-hover-color: $clr-dark-blue;
+$link-hover-decoration: none;
+
+
+
+// Buttons
+
+$btn-primary-bg: $clr-blue;
+$btn-primary-border: $clr-blue;
+
+
+
+// Navbar
+
+$navbar-margin-bottom: 0px;
+$navbar-border-radius: initial;
+$navbar-padding-vertical: 12px;
+
+$navbar-default-bg: rgba(255, 255, 255, 1);
+$navbar-default-link-color: #444444;
+$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-hover-color: lighten($navbar-default-link-color, 30%);
+$navbar-default-link-active-color: $clr-blue;
+$navbar-default-link-active-bg: transparent;
+
+$navbar-inverse-bg: rgba(0, 0, 0, 0.6);
+$navbar-inverse-link-color: $clr-white;
+$navbar-inverse-link-hover-color: darken($navbar-inverse-link-color, 30%);
+$navbar-inverse-link-active-color: $clr-blue;
+$navbar-inverse-link-active-bg: transparent;
+
+$navbar-default-toggle-hover-bg: $clr-blue;
+$navbar-default-toggle-icon-bar-bg: $clr-white;
+$navbar-default-toggle-border-color: $clr-blue;
+
+$navbar-inverse-toggle-hover-bg: $clr-blue;
+$navbar-inverse-toggle-icon-bar-bg: $clr-white;
+$navbar-inverse-toggle-border-color: $clr-blue;
+
+
+
+// Pagination
+
+$pagination-color: $clr-blue;
+$pagination-hover-color: $clr-dark-blue;
+$pagination-active-border: $clr-blue;
+$pagination-active-bg: $clr-blue;
+
+
+
+// Custom, non-Bootstrap variables
+
+$md-icon-path: '../img/icons' !default;
+
+$font-family-alt: "calluna-sans";
+
+$btn-primary-bg-hover: $clr-dark-blue;
+
+$main-content-wrap-margin: 140px !default;
+$main-content-font-size: 18px;
+$main-content-font-size-large: 25px;
+$main-content-line-height: 1.6;
+$main-content-line-height-large: 1.4;
+
+$md-hero-height: 400px;

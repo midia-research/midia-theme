@@ -1,0 +1,36 @@
+/*
+ * Analysts widget.
+ */
+
+
+
+.analysts-wrapper {
+    padding-bottom: 60px;
+
+    @media all and (min-width: $screen-md-min) {
+        padding-bottom: 30px;
+    }
+
+    .item {
+        @media all and (min-width: $screen-md-min) {
+            height: 400px;
+        }
+    }
+}
+
+.analysts-item {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 30px;
+        color: $text-color;
+    }
+
+    .avatar {
+        width: 104px;
+        height: 104px;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,122 @@
+/*
+ * Sidebar styling.
+ */
+
+
+
+// Base extend-only classes for sidebar and widgets
+
+%base-sidebar-item {
+    margin: 0 0 40px 0;
+}
+
+%base-sidebar-item-title {
+    font-weight: 200;
+    font-size: 16px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+%base-sidebar-item-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 0 0 10px 15px;
+        margin: 0 0 10px 0;
+        border-bottom: 1px solid $clr-grey;
+
+        &:before {
+            content: "\203A";
+            position: absolute;
+            left: 15px;
+            margin-top: -1px;
+            color: #aaa;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        a:not(.btn) {
+            color: $clr-very-dark-grey;
+            display: block;
+
+            &:hover {
+                color: $clr-blue;
+            }
+        }
+
+        span {
+            &.post-date {
+                color: #999;
+            }
+        }
+    }
+}
+
+
+
+// Sidebar style classes, mostly used in app
+
+.sidebar-item {
+    @extend %base-sidebar-item;
+
+    .sidebar-item-title {
+        @extend %base-sidebar-item-title;
+    }
+
+    .sidebar-item-list {
+        @extend %base-sidebar-item-list;
+    }
+}
+
+
+
+// Widget style classes, mostly used in blog
+
+.widget {
+    @extend %base-sidebar-item;
+
+    .widget-title {
+        @extend %base-sidebar-item-title;
+    }
+
+    ul {
+        @extend %base-sidebar-item-list;
+    }
+
+    .widget-authors {
+        text-align: center;
+
+        .widget-title {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            @include clearfix();
+
+            li {
+                border: none;
+                width: 50%;
+                float: left;
+
+                &:before {
+                    content: "";
+                }
+
+                .md-icon, .avatar {
+                    display: inline-block;
+                }
+
+                .avatar {
+                    width: 104px;
+                    height: 104px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

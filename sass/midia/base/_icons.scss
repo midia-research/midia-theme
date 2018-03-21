@@ -1,0 +1,112 @@
+/*
+ * Custom icons.
+ */
+
+
+
+.md-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.md-icon-file {
+    width: 60px;
+    height: 82px;
+    background-image: url($md-icon-path + '/file.png');
+    background-image: url($md-icon-path + '/file.svg'), none;
+}
+
+.md-icon-home {
+    width: 20px;
+    height: 20px;
+    background-image: url($md-icon-path + '/home.png');
+    background-image: url($md-icon-path + '/home.svg'), none;
+}
+
+.md-icon-basket {
+    width: 20px;
+    height: 20px;
+    background-image: url($md-icon-path + '/basket.png');
+    background-image: url($md-icon-path + '/basket.svg'), none;
+}
+
+.md-icon-facebook {
+    width: 15px;
+    height: 15px;
+    background-image: url($md-icon-path + '/facebook.png');
+    background-image: url($md-icon-path + '/facebook.svg'), none;
+}
+
+.md-icon-linkedin {
+    width: 15px;
+    height: 15px;
+    background-image: url($md-icon-path + '/linkedin.png');
+    background-image: url($md-icon-path + '/linkedin.svg'), none;
+}
+
+.md-icon-twitter {
+    width: 15px;
+    height: 15px;
+    background-image: url($md-icon-path + '/twitter.png');
+    background-image: url($md-icon-path + '/twitter.svg'), none;
+}
+
+.md-icon-people {
+    width: 104px;
+    height: 104px;
+    background-image: url($md-icon-path + '/icon1.png');
+    background-image: url($md-icon-path + '/icon1.svg'), none;
+    background-size: cover;
+}
+
+.md-icon-gears {
+    width: 104px;
+    height: 104px;
+    background-image: url($md-icon-path + '/icon2.png');
+    background-image: url($md-icon-path + '/icon2.svg'), none;
+    background-size: cover;
+}
+
+.md-icon-pdf {
+    width: 104px;
+    height: 104px;
+    background-image: url($md-icon-path + '/icon3.png');
+    background-image: url($md-icon-path + '/icon3.svg'), none;
+    background-size: cover;
+}
+
+.md-icon-pdf-thumb {
+    width: 33px;
+    height: 45px;
+    background-image: url($md-icon-path + '/pdf.png');
+    background-image: url($md-icon-path + '/pdf.svg'), none;
+}
+
+.md-icon-word {
+    width: 33px;
+    height: 45px;
+    background-image: url($md-icon-path + '/word.png');
+    background-image: url($md-icon-path + '/word.svg'), none;
+}
+
+.md-icon-powerpoint {
+    width: 33px;
+    height: 45px;
+    background-image: url($md-icon-path + '/powerpoint.png');
+    background-image: url($md-icon-path + '/powerpoint.svg'), none;
+}
+
+.md-icon-excel {
+    width: 33px;
+    height: 45px;
+    background-image: url($md-icon-path + '/excel.png');
+    background-image: url($md-icon-path + '/excel.svg'), none;
+}
+
+.md-icon-feed {
+    width: 15px;
+    height: 15px;
+    background-image: url($md-icon-path + '/feed.png');
+    background-image: url($md-icon-path + '/feed.svg'), none;
+}
